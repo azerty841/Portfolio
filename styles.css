@@ -1,0 +1,706 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+.luckiest-guy-regular {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Style général */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color:   whitesmoke;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+/* Bannière */
+.banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: whitesmoke; /* Couleur de la bannière */
+  color: black;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.banner img {
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+/* Menu latéral */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 16px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  box-sizing: border-box; 
+  background: none; 
+  border: none; 
+}
+
+.sidenav a:hover {
+  background-color: rgba(143, 143, 143, 0.397);
+  border-bottom: none; 
+  transform: translateX(10px); 
+}
+
+
+.sidenav a:last-child {
+  border-bottom: none;
+}
+
+/* Style spécifique à la croix de fermeture */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  color: white;
+  
+  background-color: #f1f1f1; 
+  padding: 0; 
+  border: none; 
+  background: none; 
+  transition: color 0.3s, transform 0.3s; 
+  z-index: 2000; 
+}
+
+section{
+  margin-top: 75px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#titre{
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  margin-top: 70px;
+  font-family: cursive;
+  text-decoration: underline;
+}
+
+h2{
+  padding-top: 75px;
+  padding-bottom: 20px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+  background-color: rgb(133, 160, 158);
+  border-radius: 30px;
+
+}
+
+h3{
+  margin-top: 30px;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+h4{
+  text-decoration: underline  ;
+}
+
+.intro{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 15px;
+  background-color: rgba(194, 194, 194, 0.658);
+  border-radius: 40px;
+  border: solid 5px, rgb(133, 160, 158);
+  margin-right:15px;
+  padding: 15px;
+  line-height: 2;
+}
+
+.photo1{
+  width: 15%;
+
+}
+
+.etud1{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 15px;
+  background-color: rgba(194, 194, 194, 0.658);
+  border-radius: 40px;
+  border: solid 5px, rgb(133, 160, 158);
+  margin-right:15px;
+  margin-top: 30px;
+  padding: 15px;
+  line-height: 2;
+
+}
+
+.photo2{
+  width: 20%;
+}
+
+.etud2{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 15px;
+  background-color: rgba(194, 194, 194, 0.658);
+  border-radius: 40px;
+  border: solid 5px, rgb(133, 160, 158);
+  margin-right:15px;
+  margin-top: 30px;
+  padding: 15px;
+  line-height: 2;
+}
+
+.photo3{
+  width: 10%;
+}
+
+.pro1{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 15px;
+  background-color: rgba(194, 194, 194, 0.658);
+  border-radius: 40px;
+  border: solid 5px, rgb(133, 160, 158);
+  margin-right:15px;
+  margin-top: 30px;
+  padding: 15px;
+  line-height: 2;
+}
+
+.perso{
+  border-radius: 40px;
+  border: solid 5px, rgb(0, 0, 0);
+}
+
+.titre{
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.trois{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 15px;
+
+}
+
+.curiosité{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  background-color: rgba(194, 194, 194, 0.658);
+  border-radius: 40px;
+  border: solid 5px, rgb(133, 160, 158);
+  margin-right:15px;
+  margin-left: 15px;
+  margin-top: 30px;
+  padding: 15px;
+  width: 85%;
+  line-height: 1.5;
+}
+
+.photo4{
+  height: 50px;
+  width: auto;
+  margin-left: 70px;
+}
+
+.patience{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-left: 15px;
+  background-color: rgba(194, 194, 194, 0.658);
+  border-radius: 40px;
+  border: solid 5px, rgb(133, 160, 158);
+  margin-right:15px;
+  margin-top: 30px;
+  padding: 15px;
+  width: 40%;
+  line-height: 2;
+}
+
+.photo5{
+  height: 50px;
+  width: auto;
+  margin-left: 70px;
+  margin-top: 10px;
+
+}
+
+.Sérieux{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-left: 15px;
+  background-color: rgba(194, 194, 194, 0.658);
+  border-radius: 40px;
+  border: solid 5px, rgb(133, 160, 158);
+  margin-right:15px;
+  margin-top: 30px;
+  padding: 15px;
+  width: 40%;
+  line-height: 1.5;
+}
+
+.photo6{
+  height: 50px;
+  width: auto;
+  margin-left: 70px;
+}
+
+.BUT{
+  border-radius: 40px;
+  border: solid 5px, rgb(0, 0, 0);
+  margin-top: 30px;
+}
+
+.comp_BUT{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
+label {
+  padding-right: 10px;
+  font-size: 1rem;
+}
+
+progress {
+  width: 300px;
+}
+
+.prog{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(194, 194, 194, 0.658);
+  border-radius: 40px;
+  border: solid 5px, rgb(133, 160, 158);
+  margin-right:15px;
+  margin-top: 30px;
+  margin-left: 15px;
+  padding: 15px;
+  width: 40%;
+  line-height: 1.5;
+}
+
+.télécom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(194, 194, 194, 0.658);
+  border-radius: 40px;
+  border: solid 5px, rgb(133, 160, 158);
+  margin-right:15px;
+  margin-top: 30px;
+  margin-left: 15px;
+  padding: 15px;
+  width: 40%;
+  line-height: 1.5;
+}
+
+.rés{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(194, 194, 194, 0.658);
+  border-radius: 40px;
+  border: solid 5px, rgb(133, 160, 158);
+  margin-right:15px;
+  margin-top: 30px;
+  margin-left: 15px;
+  padding: 15px;
+  width: 40%;
+  line-height: 1.5;
+}
+
+.Téléphonie{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(194, 194, 194, 0.658);
+  border-radius: 40px;
+  border: solid 5px, rgb(133, 160, 158);
+  margin-right:15px;
+  margin-top: 30px;
+  margin-left: 15px;
+  padding: 15px;
+  width: 40%;
+  line-height: 1.5;
+}
+
+.Cybersécurité{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(194, 194, 194, 0.658);
+  border-radius: 40px;
+  border: solid 5px, rgb(133, 160, 158);
+  margin-right:15px;
+  margin-top: 30px;
+  margin-left: 15px;
+  padding: 15px;
+  width: 40%;
+  line-height: 1.5;
+}
+
+.langue{
+  border-radius: 40px;
+  border: solid 5px, rgb(0, 0, 0);
+  margin-top: 30px;
+}
+
+.comp_lang{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 15px;
+  font-size: 30px;
+}
+
+
+.ang{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: rgba(194, 194, 194, 0.658);
+  border-radius: 40px;
+  border: solid 5px, rgb(133, 160, 158);
+  margin-top: 30px;
+  margin-left: 15px;
+  padding: 15px;
+  width: 30%;
+  line-height: 1.5;
+}
+
+.photo7{
+  width: 50%;
+}
+
+.Ita{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: rgba(194, 194, 194, 0.658);
+  border-radius: 40px;
+  border: solid 5px, rgb(133, 160, 158);
+  margin-right:15px;
+  margin-top: 30px;
+  margin-left: 15px;
+  padding: 15px;
+  width: 30%;
+  line-height: 1.5;
+}
+
+.photo8{
+  width: 50%;
+}
+
+.pays{
+  display: flex;
+  text-align: center;
+}
+
+.niveau{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  width: 150px;
+  font-size: 30px;
+  border-radius: 70px;
+  background-color: aqua;
+}
+
+.pro{
+  border-radius: 40px;
+  border: solid 5px, rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;      
+  text-align: center;
+}
+
+
+.sae1_1{
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;               /* réduit l'espacement vertical entre éléments */
+  padding: 10px;          /* ajout d'un padding plus petit */
+  background-color: rgba(194, 194, 194, 0.658);
+  border-radius: 40px;
+  border: solid 5px rgb(133, 160, 158);
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+/* Espacements internes plus compacts pour h4 et p */
+.sae1_1 h4 {
+  margin: 0 0 6px 0;
+  line-height: 1.2;
+}
+
+.sae1_1 p {
+  margin: 0 0 8px 0;
+  line-height: 1.35;
+}
+
+.button{
+  border-radius: 40px;
+  border: solid 5px, rgb(0, 0, 0);
+  background-color: rgb(4, 192, 67);
+  margin-right: 38%;
+  margin-left: 38%;
+  margin-bottom: 1%;
+}
+
+
+.sae1_2{
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;               /* réduit l'espacement vertical entre éléments */
+  padding: 10px;          /* ajout d'un padding plus petit */
+  background-color: rgba(194, 194, 194, 0.658);
+  border-radius: 40px;
+  border: solid 5px rgb(133, 160, 158);
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+/* Espacements internes plus compacts pour h4 et p */
+.sae1_2 h4 {
+  margin: 0 0 6px 0;
+  line-height: 1.2;
+}
+
+.sae1_2 p {
+  margin: 0 0 8px 0;
+  line-height: 1.35;
+}
+
+.photo_cisco{
+  margin-left: 30px;
+  width: 15%;
+}
+
+.sae2_4{
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;               /* réduit l'espacement vertical entre éléments */
+  padding: 10px;          /* ajout d'un padding plus petit */
+  background-color: rgba(194, 194, 194, 0.658);
+  border-radius: 40px;
+  border: solid 5px rgb(133, 160, 158);
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+/* Espacements internes plus compacts pour h4 et p */
+.sae2_4 h4 {
+  margin: 0 0 6px 0;
+  line-height: 1.2;
+}
+
+.sae2_4 p {
+  margin: 0 0 8px 0;
+  line-height: 1.35;
+}
+
+
+.sae3_2{
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;               /* réduit l'espacement vertical entre éléments */
+  padding: 10px;          /* ajout d'un padding plus petit */
+  background-color: rgba(194, 194, 194, 0.658);
+  border-radius: 40px;
+  border: solid 5px rgb(133, 160, 158);
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+/* Espacements internes plus compacts pour h4 et p */
+.sae3_2 h4 {
+  margin: 0 0 6px 0;
+  line-height: 1.2;
+}
+
+.sae3_2 p {
+  margin: 0 0 8px 0;
+  line-height: 1.35;
+}
+
+.divers{
+  border-radius: 40px;
+  border: solid 5px, rgb(0, 0, 0);
+  margin-top: 30px;
+}
+
+.pass{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+.place{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.decou{
+  text-align: center;
+}
+
+.game{
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(194, 194, 194, 0.658);
+  border-radius: 40px;
+  border: solid 5px, rgb(133, 160, 158);
+  margin-right:15px;
+  margin-top: 30px;
+  margin-left: 15px;
+  padding: 15px;
+  width: 80%;
+}
+
+.photo9{
+  width: 8%;
+  margin-left: 15px;
+}
+
+.photo10{
+  width: 20%;
+  margin-left: 15px;
+}
+
+.photo11{
+  width: 20%;
+  margin-left: 15px;
+}
+
+
+.book{
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(194, 194, 194, 0.658);
+  border-radius: 40px;
+  border: solid 5px, rgb(133, 160, 158);
+  margin-right:15px;
+  margin-top: 30px;
+  margin-left: 15px;
+  padding: 15px;
+  width: 80%;
+}
+
+.photo12{
+
+  width: 10%;
+  margin-left: 15px;
+}
+
+.photo13{
+  width: 10%;
+  margin-left: 15px;
+}
+
+.moto{
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(194, 194, 194, 0.658);
+  border-radius: 40px;
+  border: solid 5px, rgb(133, 160, 158);
+  margin-right:15px;
+  margin-top: 30px;
+  margin-left: 15px;
+  padding: 15px;
+  width: 80%;
+}
+
+.photo14{
+  width: 20%;
+  margin-left: 15px;
+}
+
+.photo15{
+  width: 20%;
+  margin-left: 15px;
+}
+
+.photo16{
+  width: 20%;
+  margin-left: 15px;
+}
+

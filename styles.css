@@ -186,16 +186,68 @@ h4{
 
 .pro1{
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
   flex-wrap: wrap;
   margin-left: 15px;
   background-color: rgba(194, 194, 194, 0.658);
-  border-radius: 40px;
+  border-radius: 20px;
   border: solid 5px, rgb(133, 160, 158);
   margin-right:15px;
   margin-top: 30px;
   padding: 15px;
-  line-height: 2;
+  line-height: 1.6;
+}
+
+.pro1 img{
+  flex: 0 0 160px;
+  max-width: 160px;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.pro1 .pro-content{
+  flex: 1 1 auto;
+}
+
+.pro1 .pro-content h3{
+  margin-top: 0;
+}
+
+.pro-content .meta{
+  font-style: italic;
+  color: #4a4a4a;
+  margin: 6px 0 10px 0;
+}
+
+.pro-content h4{
+  margin: 12px 0 6px 0;
+  color: #222;
+  font-size: 1rem;
+}
+
+.pro-content ul{
+  margin: 6px 0 12px 1.2rem;
+}
+
+.pro1{
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+@media (max-width: 800px) {
+  .pro1{
+    flex-direction: column;
+    align-items: center;
+  }
+  .pro1 img{
+    max-width: 40%;
+    margin-bottom: 12px;
+  }
+  .pro1 .pro-content{
+    width: 100%;
+  }
 }
 
 .perso{
